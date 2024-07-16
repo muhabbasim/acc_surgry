@@ -1,0 +1,51 @@
+
+.gold_card {
+  background-image: linear-gradient(to right, #eede8b 0%, #ce9025 100%);
+  position: relative;
+}
+
+.selver_card {
+  background-image: linear-gradient(to right, #e3e3e3 0%, #8e9197 100%);
+  position: relative;
+}
+
+.platinum_card {
+  background-image: linear-gradient(to right, #cbb1e5 31%, #56317a 100%);
+  position: relative;
+}
+
+.gold{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+
+  background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.selver{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+
+  background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.platinum{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+
+  background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #f9f3ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -349,7 +349,6 @@ menu
 
     & .container {
         pointer-events: none;
-
     }
 
     & .mil-frame-top {
@@ -373,27 +372,7 @@ menu
             & span:after,
             & span:before {
                 background-color: $light;
-                z-index: 10;
             }
-        }
-    }
-
-            
-    .menu-sides {
-        display: flex;
-        // justify-content: space-around;
-
-        // grid-template-columns: 1fr 1fr;
-        // display: flex;   
-        .menu-left {
-            flex-grow: 6;
-            // grid-column: 1 / 2;
-            // flex-basis: auto;
-        }
-        .menu-right {
-            flex-grow: 4;
-
-            // grid-column: 1 / 2;
         }
     }
 
@@ -512,7 +491,6 @@ menu
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
 
     ul {
         padding: 0;
@@ -2375,6 +2353,7 @@ accordion
 .mil-accordion-content {
     height: 0;
     overflow: hidden;
+    color: gray;
 }
 
 .mil-active + .mil-accordion-content {

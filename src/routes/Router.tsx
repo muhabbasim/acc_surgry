@@ -37,6 +37,12 @@ const NotFound = Loadable(lazy(() => import('../Acc_pages/error/Error')));
 
 
 const Home = Loadable(lazy(() => import('../Acc_landingpage/pages/Home')));
+const HomeService = Loadable(lazy(() => import('../Acc_landingpage/pages/services/Services')));
+const HomeServiceDetails = Loadable(lazy(() => import('../Acc_landingpage/pages/services/ServicesDetails')));
+const Blog = Loadable(lazy(() => import('../Acc_landingpage/pages/blog/Blog')));
+const BlogDetails = Loadable(lazy(() => import('../Acc_landingpage/pages/blog/BlogDetails')));
+const BlogCat = Loadable(lazy(() => import('../Acc_landingpage/pages/blog/BlogCat')));
+const Contact = Loadable(lazy(() => import('../Acc_landingpage/pages/contact/Contact')));
 
 
 const Router = [
@@ -84,10 +90,14 @@ const Router = [
     path: '/',
     element: <LandingPageLayout />,
     children: [
-
       // Acc landingpage routes
       { path: '/home', element: <Home /> },
-
+      { path: '/home/services', element: <HomeService /> },
+      { path: '/home/services/service_details/:id', element: <HomeServiceDetails /> },
+      { path: '/home/blog', element: <Blog /> },
+      { path: '/home/blog/blog_details/:id', element: <BlogDetails /> },
+      { path: '/home/blog/blog_cat/:id', element: <BlogCat /> },
+      { path: '/home/contact', element: <Contact /> },
     ],
   },
 ];

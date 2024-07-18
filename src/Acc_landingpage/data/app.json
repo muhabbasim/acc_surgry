@@ -109,20 +109,16 @@
                 "link": "/"
             },
             {
-                "label": "Portfolio",
-                "link": "/projects"
-            },
-            {
                 "label": "Services",
-                "link": "/services"
+                "link": "/home/services"
             },
             {
                 "label": "Contact",
-                "link": "/contact"
+                "link": "/home/contact"
             },
             {
                 "label": "Blog",
-                "link": "/blog"
+                "link": "/home/blog"
             }
         ]
     },

@@ -1,6 +1,6 @@
 import React from "react";
-import Link from "next/link";
-import LinesIcon from "@layouts/svg-icons/Lines";
+
+import LinesIcon from "src/Acc_landingpage/layouts/svg-icons/Lines";
 
 const ProjectsMasonry = ({ projects }) => {
     const projectRows = [];

@@ -55,23 +55,23 @@ const DefaultHeader = () => {
         <div className="mil-frame-top">
             <Link to={AppData.header.logo.link} className="mil-logo">{AppData.header.logo.symbol}</Link>
             <div className={`mil-menu-btn ${toggle ? "mil-active" : ""}`} onClick={() => setToggle(!toggle)}>
-                <span />
+              <span />
             </div>
         </div>
         {/* frame clone end */}
         <div className="container">
           <div className="mil-menu-content">
-              <div className="rowx menu-sides">
-                  <div className="col-xl-5x menu-left">
+              <div className="row">
+                  <div className="col-xl-5">
 
                       <nav className="mil-main-menu" id="swupMenu">
-                        <ul style={{ listStyleType: 'none'}}>
+                        <ul style={{listStyleType: 'none'}}>
                             {navItems.map((item:any, key:any) => (
                             <li className={item.classes} key={`header-menu-item-${key}`}>
                                 <Link to={item.link} onClick={item.children != 0 ? (e) => clickedMobileMenuItemParent(e) : ""}>{item.label}</Link>
                                 {item.children != 0 &&
                                 <ul>
-                                    {item.children.map((subitem:any, key2:any) => (
+                                    {item.children.map((subitem: any, key2: any) => (
                                     <li key={`header-submenu${key}-item-${key2}`} className={ ( ( asPath.indexOf( subitem.link ) != -1 && subitem.link != '/' ) || asPath == subitem.link ) ? "mil-active" : "" }>
                                         <Link to={subitem.link}>{subitem.label}</Link>
                                     </li>
@@ -84,7 +84,7 @@ const DefaultHeader = () => {
                       </nav>
 
                   </div>
-                  <div className="col-xl-7x menu-right">
+                  <div className="col-xl-7">
 
                       <div className="mil-menu-right-frame">
                           <div className="mil-animation-in">
@@ -95,8 +95,8 @@ const DefaultHeader = () => {
                               </div>
                           </div>
                           <div className="mil-menu-right">
-                              <div className="rowx menu-sides">
-                                  <div  style={{ width: '300px'}} className="col-lg-8x menu-left mil-mb-60">
+                              <div className="row">
+                                  <div className="col-lg-8 mil-mb-60">
 
                                       <h6 className="mil-muted mil-mb-30">Projects</h6>
 
@@ -110,7 +110,7 @@ const DefaultHeader = () => {
                                       </ul>
 
                                   </div>
-                                  <div className="col-lg-4x menu-right mil-mb-60">
+                                  <div className="col-lg-4 mil-mb-60">
 
                                       <h6 className="mil-muted mil-mb-30">Useful links</h6>
 
@@ -124,17 +124,18 @@ const DefaultHeader = () => {
                                   </div>
                               </div>
                               <div className="mil-divider mil-mb-60"></div>
-                              <div className="row justify-content-between menu-sides">
+                              <div className="row justify-content-between">
 
                                   <div className="col-lg-4 mil-mb-60">
 
                                       <h6 className="mil-muted mil-mb-30">Canada</h6>
 
-                                      <p style={{ width: '300px'}} className="mil-light-soft mil-up">71 South Los Carneros Road, California <span className="mil-no-wrap">+51 174 705 812</span></p>
+                                      <p className="mil-light-soft mil-up">71 South Los Carneros Road, California <span className="mil-no-wrap">+51 174 705 812</span></p>
 
                                   </div>
                                   <div className="col-lg-4 mil-mb-60">
                                     <h6 className="mil-muted mil-mb-30">Language</h6>
+
                                     <Language setToggle={setToggle}/>
                                   </div>
                               </div>
@@ -154,17 +155,17 @@ const DefaultHeader = () => {
       {/* frame */}
       <div className="mil-frame">
         <div className="mil-frame-top">
-          <Link to={AppData.header.logo.link} className="mil-logo">
-            <img style={{ width: '150px', filter: 'grayscale(100%)x brightness(150%)x'}} src="src/assets/landingpage/acc_logo_full.png" alt="logo"/>
+          <Link to={'/home'} className="mil-logo">
+            <img style={{ width: '150px', filter: 'grayscale(100%)x brightness(150%)x'}} loading="lazy" src="src/assets/landingpage/acc_logo_full.png" alt="logo"/>
           </Link>
         
-            <div className={`mil-menu-btn ${toggle ? "mil-active" : ""}`} onClick={() => setToggle(!toggle)}>
-                <span />
-            </div>
+          <div className={`mil-menu-btn ${toggle ? "mil-active" : ""}`} onClick={() => setToggle(!toggle)}>
+            <span />
+          </div>
         </div>
         <div className="mil-frame-bottom">
-            <div className="mil-current-page" />
-            <BackToTop />
+          <div className="mil-current-page" />
+          <BackToTop />
         </div>
       </div>
       {/* frame end */}

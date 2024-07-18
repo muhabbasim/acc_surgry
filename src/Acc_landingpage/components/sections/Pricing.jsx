@@ -1,8 +1,8 @@
 import React from "react";
-import Data from "@data/sections/pricing.json";
-import Link from "next/link";
+import Data from "src/Acc_landingpage/data/sections/pricing.json";
 
-import ArrowIcon from "@layouts/svg-icons/Arrow";
+
+import ArrowIcon from "src/Acc_landingpage/layouts/svg-icons/Arrow";
 
 const PricingSection = () => {
     

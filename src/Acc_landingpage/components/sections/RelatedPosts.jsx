@@ -1,6 +1,6 @@
-import Data from "@data/sections/related-posts.json";
+import Data from "src/Acc_landingpage/data/sections/related-posts.json";
 import Date from '@library/date';
-import Link from "next/link";
+
 
 const RelatedPostsSection = ( Content ) => {
 

@@ -1,6 +1,6 @@
-import Data from "@data/sections/subscribe.json";
-import AppData from "@data/app.json";
-import ArrowIcon from "@layouts/svg-icons/Arrow";
+import Data from "src/Acc_landingpage/data/sections/subscribe.json";
+import AppData from "src/Acc_landingpage/data/app.json";
+import ArrowIcon from "src/Acc_landingpage/layouts/svg-icons/Arrow";
 
 const SubscribeSection = () => {
   return (

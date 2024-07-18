@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 import ImageView from "@components/ImageView";
 
 const ProjectInner2 = ({ postData, prev, next }) => {

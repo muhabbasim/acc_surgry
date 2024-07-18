@@ -1,7 +1,7 @@
-import Data from "@data/sections/hero-2.json";
-import Link from "next/link";
-import ArrowIcon from "@layouts/svg-icons/Arrow";
-import Pentagon from "@layouts/pentagon/Index";
+import Data from "src/Acc_landingpage/data/sections/hero-2.json";
+
+import ArrowIcon from "src/Acc_landingpage/layouts/svg-icons/Arrow";
+import Pentagon from "src/Acc_landingpage/layouts/pentagon/Index";
 
 const HeroTwo = () => {
     return (
